@@ -1,0 +1,59 @@
+@import url('https://fonts.cdnfonts.com/css/general-sans');
+
+:root {
+  --main-color: #132518;
+  --secondary-color: rgba(43, 43, 43, 0.5);
+
+  --accent-color: #4cad66;
+
+  --bg-main: #fff;
+  --bg-secondary: #fafafa;
+
+  --border-color: #d7d7d7;
+}
+
+body {
+  margin: 0;
+  font-family: 'General Sans', sans-serif, ;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--bg-color);
+  letter-spacing: 0.04em;
+  line-height: 1.5;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+button {
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+}
+

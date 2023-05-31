@@ -1,0 +1,38 @@
+.main {
+  padding: 24px 24px 24px 80px;
+  width: 100%;
+}
+
+.container {
+  width: 519px;
+  margin-right: auto;
+}
+.imageContainer {
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+  margin-left: auto;
+  width: '52%';
+  background-image: url(../../assets/images/auth-background-x1.jpg); /*  Базовые 1x изображение (for mobile screen) */
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url(../../assets/images/auth-background-x2.jpg); /* Браузер переопределит путь к 2x изображению если плотность экрана как минимум 2 (for mobile screens)*/
+  }
+ 
+}
+
+.title {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 1.2;
+  margin-bottom: 4px;
+}
+
+.subTitle {
+  color: var(--secondary-color);
+  font-weight: 400;
+  font-size: 18px;
+}
+
+
