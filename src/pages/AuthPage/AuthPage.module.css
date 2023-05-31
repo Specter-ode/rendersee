@@ -13,11 +13,11 @@
   background-size: cover;
   margin-left: auto;
   width: '52%';
-  background-image: url(../../assets/images/auth-background-x1.jpg); /*  Базовые 1x изображение (for mobile screen) */
+  background-image: url(../../assets/images/auth-background-x1.png); 
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-    background-image: url(../../assets/images/auth-background-x2.jpg); /* Браузер переопределит путь к 2x изображению если плотность экрана как минимум 2 (for mobile screens)*/
+    background-image: url(../../assets/images/auth-background-x2.png);
   }
  
 }
