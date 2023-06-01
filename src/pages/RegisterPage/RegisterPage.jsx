@@ -12,7 +12,8 @@ const RegisterPage = () => {
   const handleRegister = async data => {
     const { name, lastName, email, password } = data;
     const res = await dispatch(register({ name, lastName, email, password }));
-    if(res?.payload) {
+
+    if(res?.payload?.user) {
       navigate('/login');
     }
   };
