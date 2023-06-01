@@ -1,0 +1,7 @@
+.imageBlock {
+  border-radius: 20px;
+  overflow: hidden;
+}
+.image {
+  height: 100%;
+}

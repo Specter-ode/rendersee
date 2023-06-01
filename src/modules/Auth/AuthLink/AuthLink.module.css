@@ -1,0 +1,12 @@
+.link {
+    margin-top: 12px;
+    display: block;
+    text-align: center;
+}
+.text{
+    font-weight: 400;
+    font-size: 16px;
+}
+.span{
+    font-weight: 600;
+}
