@@ -4,6 +4,8 @@ import AuthLink from '../AuthLink/AuthLink';
 import CustomButton from 'components/CustomButton/CustomButton';
 import useForm from 'services/hooks/useForm';
 import CustomCheckBox from 'components/CustomCheckBox/CustomCheckBox';
+import EyeButton from '../EyeButton/EyeButton';
+import { useState } from 'react';
 
 const initialState = { name: '', lastName: '', email: '', password: '', termsOfService: false };
 
@@ -12,7 +14,8 @@ const RegisterForm = ({ onSubmitClick }) => {
     onSubmitClick,
     initialState,
   });
-
+  const [isShowPassword, setIsShowPassword] = useState(false);
+  console.log('isShowPassword: ', isShowPassword);
   const { name, lastName, email, password, termsOfService } = state;
   const isDisabled =
     !termsOfService ||
@@ -46,8 +49,9 @@ const RegisterForm = ({ onSubmitClick }) => {
         handleChange={handleChange}
         placeholder="Enter your password"
         min="8"
-        type="password"
+        type={isShowPassword ? 'text' : 'password'}
         marginBottom="24px"
+        icon={<EyeButton isOpened={isShowPassword} onClick={() => {setIsShowPassword(!isShowPassword)}}/>}
       />
       <CustomCheckBox
         marginBottom="48px"

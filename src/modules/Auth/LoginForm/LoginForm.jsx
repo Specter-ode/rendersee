@@ -3,14 +3,20 @@ import AuthLink from '../AuthLink/AuthLink';
 import CustomButton from 'components/CustomButton/CustomButton';
 import useForm from 'services/hooks/useForm';
 
+import { useState } from 'react';
+import EyeButton from '../EyeButton/EyeButton';
+
 const initialState = { email: '', password: '' };
+
+
+
 
 const LoginForm = ({ onSubmitClick }) => {
   const { state, errorsState, handleChange, handleSubmit } = useForm({
     onSubmitClick,
     initialState,
   });
-
+  const [isShowPassword, setIsShowPassword] = useState(false);
   const { email, password } = state;
   const isDisabled = !email || !password || errorsState.email || errorsState.password;
 
@@ -31,8 +37,9 @@ const LoginForm = ({ onSubmitClick }) => {
         handleChange={handleChange}
         placeholder="Enter your password"
         min="8"
-        type="password"
+        type={isShowPassword ? 'text' : 'password'}
         marginBottom="48px"
+        icon={<EyeButton isOpened={isShowPassword} onClick={() => {setIsShowPassword(!isShowPassword)}}/>}
       />
 
       <CustomButton title="Login" disabled={isDisabled} />

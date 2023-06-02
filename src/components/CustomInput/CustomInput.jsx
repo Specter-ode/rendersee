@@ -15,6 +15,7 @@ const CustomInput = ({
   error,
   pattern,
   title,
+  icon
 }) => {
   return (
     <div className={s.inputBlock} style={{ marginBottom }}>
@@ -32,7 +33,9 @@ const CustomInput = ({
         placeholder={placeholder}
         pattern={pattern}
         title={title}
+        style={{padding: icon ? '11px 39px 11px 23px' : '11px 23px'}}
       />
+      {icon}
       {label && (
         <label htmlFor={name} className={s.label}>
           {label}
