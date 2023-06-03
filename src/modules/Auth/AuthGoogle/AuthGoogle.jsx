@@ -3,7 +3,6 @@ import { ReactComponent as GoogleIcon } from 'assets/icons/google.svg';
 const { REACT_APP_BACKEND_URL } = process.env;
 
 const AuthGoogle = () => {
-  console.log('REACT_APP_BACKEND_URL: ', REACT_APP_BACKEND_URL);
 
   return (
     <div className={s.imageBlock}>

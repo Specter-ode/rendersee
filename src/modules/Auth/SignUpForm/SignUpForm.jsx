@@ -1,4 +1,4 @@
-import s from './RegisterForm.module.css';
+import s from './SignUpForm.module.css';
 import CustomInput from 'components/CustomInput/CustomInput';
 import AuthLink from '../AuthLink/AuthLink';
 import CustomButton from 'components/CustomButton/CustomButton';
@@ -9,13 +9,13 @@ import { useState } from 'react';
 
 const initialState = { name: '', lastName: '', email: '', password: '', termsOfService: false };
 
-const RegisterForm = ({ onSubmitClick }) => {
+const SignUpForm = ({ onSubmitClick }) => {
   const { state, errorsState, handleChange, handleSubmit } = useForm({
     onSubmitClick,
     initialState,
   });
   const [isShowPassword, setIsShowPassword] = useState(false);
-  console.log('isShowPassword: ', isShowPassword);
+
   const { name, lastName, email, password, termsOfService } = state;
   const isDisabled =
     !termsOfService ||
@@ -66,4 +66,4 @@ const RegisterForm = ({ onSubmitClick }) => {
   );
 };
 
-export default RegisterForm;
+export default SignUpForm;

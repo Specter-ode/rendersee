@@ -5,6 +5,8 @@ const CustomButton = ({
   disabled = false,
   type = 'submit',
   width = '100%',
+  height,
+  padding = 0,
   onClick,
   marginTop,
   marginBottom,
@@ -14,7 +16,7 @@ const CustomButton = ({
       className={s.btn}
       disabled={disabled}
       type={type}
-      style={{ width, marginTop, marginBottom, cursor: disabled ? 'auto' : 'pointer' }}
+      style={{ padding, width, height, marginTop, marginBottom, cursor: disabled ? 'auto' : 'pointer' }}
       onClick={onClick}
     >
       {title}

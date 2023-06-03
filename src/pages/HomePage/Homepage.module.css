@@ -1,0 +1,9 @@
+.container {
+    position: relative;
+    padding-left: 80px;
+    min-height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+    z-index: 1;
+  }
+  

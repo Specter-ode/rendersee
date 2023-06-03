@@ -1,0 +1,18 @@
+.link {
+    border-radius: 4px;
+    line-height: 1.35;
+    border: 1px solid;
+    border-color: var(--accent-color);
+  }
+  
+  .painted {
+      color: var(--btn-color);
+      background-color: var(--accent-color);
+  }
+  
+  .transparent {
+      color: var(--accent-color);
+      background-color:  var(--btn-color);
+
+  }
+  

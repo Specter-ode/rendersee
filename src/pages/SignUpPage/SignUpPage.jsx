@@ -1,11 +1,11 @@
 import AuthLayout from 'modules/Auth/AuthLayout/AuthLayout';
-import RegisterForm from 'modules/Auth/RegisterForm/RegisterForm';
+import SignUpForm from 'modules/Auth/SignUpForm/SignUpForm';
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { register } from 'redux/auth/auth-operations';
 
 
-const RegisterPage = () => {
+const SignUpPage = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
@@ -20,9 +20,9 @@ const RegisterPage = () => {
 
   return (
     <AuthLayout title="Create an account" subTitle="Please enter your contact details to connect.">
-      <RegisterForm onSubmitClick={handleRegister} />
+      <SignUpForm onSubmitClick={handleRegister} />
     </AuthLayout>
   );
 };
 
-export default RegisterPage;
+export default SignUpPage;

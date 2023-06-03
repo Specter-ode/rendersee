@@ -16,11 +16,10 @@
   src: url('assets/fonts/GeneralSans-Semibold.otf') format('opentype');
 }
 
-
 :root {
   --main-color: #132518;
   --secondary-color: rgba(43, 43, 43, 0.5);
-
+  --btn-color: #f3f5f7;
   --accent-color: #4cad66;
 
   --bg-main: #fefefe;

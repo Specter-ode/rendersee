@@ -43,7 +43,7 @@ const LoginForm = ({ onSubmitClick }) => {
       />
 
       <CustomButton title="Login" disabled={isDisabled} />
-      <AuthLink to="/register" text="No account?" span="Register for access" />
+      <AuthLink to="/sign-up" text="No account?" span="Register for access" />
     </form>
   );
 };

@@ -7,7 +7,6 @@ const LoginPage = () => {
   const dispatch = useDispatch();
 
   const handleLogin = (userData) => {
-    console.log('userData: ', userData);
     dispatch(login(userData));
 
   };

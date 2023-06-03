@@ -3,7 +3,6 @@ import * as api from '../../services/api/auth';
 import { toast } from 'react-toastify';
 
 export const register = createAsyncThunk('auth/register', async (data, { rejectWithValue }) => {
-  console.log('register data: ', data);
   try {
     const result = await api.register(data);
     console.log('register result: ', result);

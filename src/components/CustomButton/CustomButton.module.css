@@ -2,7 +2,7 @@
   border-radius: 8px;
   height: 48px;
   border: none;
-  color: #F3F5F7;
+  color: var(--btn-color);
   font-size: 16px;
   font-weight: 600;
   background-color: var(--accent-color);

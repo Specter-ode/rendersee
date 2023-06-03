@@ -1,0 +1,21 @@
+   .container {
+    width: 519px;
+    z-index: 10;
+  }
+  .title {
+    letter-spacing: -1.5%;
+    font-size: 80px;
+    line-height: 0.75;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 24px;
+  }
+  
+  .text {
+    font-size: 18px;
+    line-height: 1.35;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 24px;
+  }
+  

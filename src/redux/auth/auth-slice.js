@@ -27,7 +27,6 @@ const authSlice = createSlice({
       })
 
       .addCase(login.fulfilled, (store, { payload }) => {
-        console.log('login payload: ', payload);
         store.user = { ...payload.user };
         store.accessToken = payload.accessToken;
         store.refreshToken = payload.refreshToken;

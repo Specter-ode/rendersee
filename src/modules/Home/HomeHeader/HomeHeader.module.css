@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: 0 80px;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
