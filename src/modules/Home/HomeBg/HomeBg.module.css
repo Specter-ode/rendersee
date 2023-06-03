@@ -6,6 +6,7 @@
   height: 100%;
   display: flex;
   justify-content: flex-end;
+  overflow: hidden;
 }
 
 .leftContainer {
@@ -13,7 +14,7 @@
   left: 0;
   top: 0;
   height: 100%;
-  width: 80vw;
+  width: 75vw;
   overflow: hidden;
   transition: width 15s linear;
   border-right: 4px solid var(--accent-color);
@@ -25,13 +26,13 @@
   left: 0;
   height: 0;
   height: 100%;
-  width: 80vw;
+  width: 75vw;
   max-width: none;
 }
 
 .rightContainer {
   height: 100%;
-  width: 80vw;
+  width: 75vw;
 }
 
 .rightImage {
